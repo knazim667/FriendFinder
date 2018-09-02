@@ -1,7 +1,7 @@
 // Dependencies--------------
 
 var express = require("express");
-//var bodyParer = require("body-parser");
+var bodyParser = require("body-parser");
 
 
 // Creating Express Server
@@ -14,8 +14,8 @@ var PORT = process.env.PORT || 8080;
 
 // Set up the express app to handle data parsing
 
-//app.use(bodyParer.urlencoded({extended: true}));
-//app.use(bodyParer.json);
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.json());
 
 // Routers
 
